@@ -1,0 +1,43 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @LVS-Editor
+ Unwatch 1
+  Star 0
+  Fork 0 LVS-Editor/Jennifer
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathJennifer/class User
+3c1b03e  an hour ago
+@LVS-Editor LVS-Editor Create class User
+1 contributor
+RawBlameHistory     28 lines (22 sloc)  520 Bytes
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FunTestApp
+{
+    public partial class Default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            User newUser = new User();
+            newUser.FirstName = "Bob";
+        }
+        
+    }
+    class User
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+    }
+
+}
+
